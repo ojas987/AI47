@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Run master.sh
+      script: master.sh
+
+- hosts: all
+  become: yes
+  tasks:
+    - name: Run slave.sh
+      script: slave.sh
